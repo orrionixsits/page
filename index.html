@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Perfil CNPJ — 40.378.117/0001-28</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#071022; --card:#0b1630; --accent:#2dd4bf; --muted:#9fb6c6; --glass: rgba(255,255,255,0.02);
+    --radius:12px; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#031022,#07122a);color:#e7f6fb;min-height:100vh}
+  .wrap{max-width:1100px;margin:28px auto;padding:20px}
+  header{display:flex;gap:16px;align-items:center}
+  .logo{width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,#1fb6a4,#0ea5a4);display:flex;align-items:center;justify-content:center;font-weight:800;color:#041022;font-size:18px;box-shadow:0 8px 30px rgba(2,6,23,.6)}
+  h1{margin:0;font-size:20px}
+  p.lead{margin:6px 0 0;color:var(--muted);font-size:13px}
+  .grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+  .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 12px 40px rgba(2,6,23,.6);border:1px solid rgba(255,255,255,0.02)}
+  .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  button.btn{background:transparent;color:#dff6f2;border:1px solid rgba(255,255,255,0.03);padding:10px 12px;border-radius:10px;cursor:pointer;font-weight:700}
+  button.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#021226;border:none}
+  .meta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .meta{background:var(--glass);padding:10px;border-radius:10px;min-width:140px;font-size:13px;color:var(--muted)}
+  .small{font-size:13px;color:var(--muted)}
+  .section{margin-top:12px}
+  .map{height:220px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+  .list{margin:0;padding:0;list-style:none}
+  .list li{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+  footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+  .modal-back{position:fixed;inset:0;background:rgba(2,6,23,0.65);display:none;align-items:center;justify-content:center;padding:20px;z-index:60}
+  .modal{background:#071122;padding:18px;border-radius:12px;max-width:780px;width:100%;box-shadow:0 20px 60px rgba(2,6,23,.8);border:1px solid rgba(255,255,255,0.03)}
+  .close{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;color:var(--muted);cursor:pointer}
+  code{background:rgba(255,255,255,0.02);padding:6px;border-radius:6px;color:#bfe9ff}
+  @media(max-width:920px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="logo">CNPJ</div>
+    <div>
+      <h1>JRASSESSORIAS SERVICOS DE CONTABILIDADE E TECNOLOGIA LTDA</h1>
+      <p class="lead">CNPJ: <strong>40.378.117/0001-28</strong> — Teresópolis, RJ — Atividade principal: Atividades de Contabilidade.</p>
+      <div class="buttons">
+        <button class="btn" onclick="openSection('sobre')">Sobre</button>
+        <button class="btn" onclick="openSection('atividades')">Atividades / CNAE</button>
+        <button class="btn" onclick="openSection('qsa')">Sócios / QSA</button>
+        <button class="btn" onclick="openSection('documentos')">Documentos & Situação</button>
+        <button class="btn" onclick="openSection('contato')">Contato</button>
+        <button class="btn primary" onclick="openSection('local')">Localização</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <!-- SOBRE -->
+      <section id="sobre" class="section">
+        <h2>Sobre a empresa</h2>
+        <p class="small" id="descricao">
+          <strong>Razão social:</strong> JRASSESSORIAS SERVICOS DE CONTABILIDADE E TECNOLOGIA LTDA<br/>
+          <strong>CNPJ:</strong> <span id="cnpj">40.378.117/0001-28</span><br/>
+          <strong>Situação cadastral:</strong> ATIVA<br/>
+          <strong>Data de abertura:</strong> 13/01/2021<br/>
+          <strong>Natureza jurídica:</strong> Sociedade Empresária Limitada (2062)<br/>
+          <strong>Capital social declarado:</strong> R$ 10.000,00
+        </p>
+
+        <div class="meta-row" style="margin-top:10px">
+          <div class="meta">Porte: MICRO EMPRESA</div>
+          <div class="meta">Matriz: Sim</div>
+          <div class="meta">CEP: <span id="cep">25995-292</span></div>
+        </div>
+      </section>
+
+      <!-- ATIVIDADES -->
+      <section id="atividades" class="section" style="display:none">
+        <h2>Atividades econômicas (CNAE)</h2>
+        <ul class="list">
+          <li><strong>69.20-6-01</strong> — Atividades de Contabilidade (principal)</li>
+          <li><strong>46.47-8-01</strong> — Comércio atacadista de artigos de escritório e papelaria</li>
+          <li><strong>62.02-3-00</strong> — Desenvolvimento e licenciamento de programas de computador customizáveis</li>
+          <li><strong>62.03-1-00</strong> — Desenvolvimento e licenciamento de programas não-customizáveis</li>
+          <li><strong>62.04-0-00</strong> — Consultoria em TI</li>
+          <li><strong>66.21-5-02</strong> — Auditoria e consultoria atuarial</li>
+        </ul>
+      </section>
+
+      <!-- QSA -->
+      <section id="qsa" class="section" style="display:none">
+        <h2>Quadro de sócios e administração (QSA)</h2>
+        <ul class="list">
+          <li><strong>José Paulo de Oliveira Junior</strong> — Sócio-Administrador (entrada: 14/12/2022)</li>
+        </ul>
+        <p class="small">Dados do QSA conforme bases públicas. Para obter CPF ou detalhes legais, emita o comprovante oficial da Receita Federal.</p>
+      </section>
+
+      <!-- DOCUMENTOS -->
+      <section id="documentos" class="section" style="display:none">
+        <h2>Documentos e situação cadastral</h2>
+        <p class="small">Emita o Comprovante de Inscrição e de Situação Cadastral diretamente no serviço da Receita Federal para certidão oficial e impressão do cartão CNPJ.</p>
+        <div style="margin-top:8px">
+          <button class="btn" onclick="window.open('https://www.gov.br/receitafederal/pt-br/assuntos/empresa')">Receita Federal (serviços)</button>
+          <button class="btn" onclick="copyCNPJ()">Copiar CNPJ</button>
+        </div>
+        <div style="margin-top:12px"><code id="cnpjcode">40378117000128</code></div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="section" style="display:none">
+        <h2>Contato público (quando disponível)</h2>
+        <p class="small">Endereço registrado: <strong>Estrada Doutor Rogerio de Moura Estevao, KM 38 — KM38 - Vieira, Teresópolis - RJ</strong></p>
+        <p class="small">CEP: 25995-292</p>
+        <p class="small">Telefone: <strong>(21) 7098-2807</strong></p>
+        <p class="small">E-mail público listado: <strong><span id="email">[email protected]</span></strong></p>
+
+        <form id="msgForm" onsubmit="event.preventDefault();sendMsg();">
+          <label class="small">Enviar mensagem (simulado)</label>
+          <div style="display:flex;gap:8px;margin-top:8px;">
+            <input id="nome" placeholder="Seu nome" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:#061022;color:#dff1ff" />
+            <input id="tel" placeholder="Telefone / Email" style="width:220px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:#061022;color:#dff1ff" />
+          </div>
+          <textarea id="msg" rows="4" placeholder="Mensagem..." style="width:100%;margin-top:10px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:#061022;color:#dff1ff"></textarea>
+          <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
+            <button class="btn" type="button" onclick="resetForm()">Limpar</button>
+            <button class="btn primary" type="submit">Enviar (simulado)</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- LOCAL -->
+      <section id="local" class="section" style="display:none">
+        <h2>Localização</h2>
+        <div class="map" id="mapWrapper">
+          <iframe id="mapframe" width="100%" height="100%" frameborder="0" style="border:0" src="" allowfullscreen></iframe>
+        </div>
+        <p class="small" style="margin-top:8px">Endereço conforme base pública: Estrada Doutor Rogerio de Moura Estevao, KM 38 — KM38 - Vieira, Teresópolis - RJ</p>
+        <div style="margin-top:8px">
+          <button class="btn" onclick="openMaps()">Abrir no Google Maps</button>
+        </div>
+      </section>
+    </div>
+
+    <aside class="right-col">
+      <div class="card" style="position:sticky;top:24px">
+        <h3>Resumo rápido</h3>
+        <div style="margin-top:8px" class="small">
+          <strong>CNPJ:</strong> 40.378.117/0001-28<br/>
+          <strong>Nome:</strong> JRASSESSORIAS SERVICOS DE CONTABILIDADE E TECNOLOGIA LTDA<br/>
+          <strong>Situação:</strong> ATIVA<br/>
+          <strong>Abertura:</strong> 13/01/2021<br/>
+          <strong>CNAE principal:</strong> 69.20-6-01 (Atividades de Contabilidade)
+        </div>
+
+        <div style="margin-top:14px">
+          <h4>Ações rápidas</h4>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+            <button class="btn" onclick="openSection('documentos')">Emitir comprovante (Receita)</button>
+            <button class="btn" onclick="openSection('qsa')">Ver QSA</button>
+            <button class="btn" onclick="downloadVCard()">Salvar contato (vcf)</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h4>Observações</h4>
+        <p class="small">Dados extraídos de fontes públicas de consulta de CNPJ. Para fins legais ou contratuais, sempre emita o comprovante oficial no site da Receita Federal.</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    Dados coletados de bases públicas de consulta CNPJ. Verifique sempre o comprovante oficial da Receita Federal.
+  </footer>
+</main>
+
+<!-- Modal -->
+<div class="modal-back" id="modal">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong id="modalTitle">Detalhes</strong>
+      <button class="close" onclick="closeModal()">Fechar ✕</button>
+    </div>
+    <div id="modalBody" style="margin-top:12px"></div>
+  </div>
+</div>
+
+<script>
+  const empresa = {
+    razao: "JRASSESSORIAS SERVICOS DE CONTABILIDADE E TECNOLOGIA LTDA",
+    cnpj: "40.378.117/0001-28",
+    cnpjnum: "40378117000128",
+    abertura: "13/01/2021",
+    situacao: "ATIVA",
+    endereco: "Estrada Doutor Rogerio de Moura Estevao, KM 38 - KM38 - Vieira",
+    cidade: "Teresópolis",
+    uf: "RJ",
+    cep: "25995-292",
+    telefone: "(21) 7098-2807",
+    email: "[email protected]",
+    cnae_principal: "69.20-6-01 — Atividades de Contabilidade",
+    capital: "R$ 10.000,00",
+    qsa: [
+      { nome: "José Paulo de Oliveira Junior", qual: "Sócio-Administrador", entrada: "14/12/2022" }
+    ]
+  };
+
+  // init
+  document.getElementById('cnpjcode').textContent = empresa.cnpjnum;
+  document.getElementById('email').textContent = empresa.email;
+
+  function openSection(id){
+    const sections = ['sobre','atividades','qsa','documentos','contato','local'];
+    for(const s of sections){
+      const el = document.getElementById(s);
+      if(!el) continue;
+      el.style.display = (s === id ? '' : 'none');
+    }
+    if(id === 'local') loadMap();
+  }
+
+  function openModal(title, html){
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalBody').innerHTML = html;
+    document.getElementById('modal').style.display = 'flex';
+  }
+  function closeModal(){ document.getElementById('modal').style.display = 'none'; }
+
+  function copyCNPJ(){
+    navigator.clipboard?.writeText(empresa.cnpj).then(()=>{
+      openModal('Copiado','CNPJ <strong>'+empresa.cnpj+'</strong> copiado para a área de transferência.');
+    }).catch(()=>{ openModal('Atenção','Não foi possível copiar automaticamente. Selecione e copie: <code>'+empresa.cnpj+'</code>'); });
+  }
+
+  function sendMsg(){
+    const nome = document.getElementById('nome').value || 'Anônimo';
+    const tel = document.getElementById('tel').value || 'não informado';
+    const msg = document.getElementById('msg').value || '';
+    const html = '<p><strong>Mensagem simulada enviada:</strong></p><p><strong>Nome:</strong> '+nome+'<br/><strong>Contato:</strong> '+tel+'<br/><strong>Mensagem:</strong><br/>'+escapeHtml(msg)+'</p>';
+    openModal('Mensagem', html);
+    resetForm();
+  }
+  function resetForm(){ document.getElementById('nome').value=''; document.getElementById('tel').value=''; document.getElementById('msg').value=''; }
+
+  function downloadVCard(){
+    const vcf = [
+      "BEGIN:VCARD",
+      "VERSION:3.0",
+      "FN:"+empresa.razao,
+      "ORG:"+empresa.razao,
+      "TEL;WORK;VOICE:"+empresa.telefone,
+      "EMAIL;WORK:"+empresa.email,
+      "ADR;TYPE=WORK:;;"+empresa.endereco+";"+empresa.cidade+";"+empresa.uf+";;"+empresa.cep,
+      "NOTE:CNPJ "+empresa.cnpj+" | CNAE: "+empresa.cnae_principal,
+      "END:VCARD"
+    ].join("\\n");
+    const blob = new Blob([vcf], {type:'text/vcard'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = empresa.razao.replace(/\s+/g,'_')+'.vcf'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+  }
+
+  function openMaps(){
+    const q = encodeURIComponent(empresa.endereco + ', ' + empresa.cidade + ' ' + empresa.uf);
+    window.open('https://www.google.com/maps/search/?api=1&query=' + q, '_blank');
+  }
+
+  function loadMap(){
+    const q = encodeURIComponent(empresa.endereco + ', ' + empresa.cidade + ' ' + empresa.uf);
+    const src = 'https://www.google.com/maps?q=' + q + '&output=embed';
+    const frame = document.getElementById('mapframe');
+    if(frame.getAttribute('src') === '') frame.setAttribute('src', src);
+  }
+
+  function escapeHtml(text){ return String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  // default
+  openSection('sobre');
+</script>
+</body>
+</html>
